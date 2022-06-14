@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+header img, footer img {
+  height: 30px;
+}
+
+.dropdown-button {
+  padding-top: 5px;
+  padding-left: 20px;
+  border: none;
+  background-color: white;
+  color: gray;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 80px;
+  right: 0;
+  left: auto;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: small;
+  color: rgb(75, 73, 73);
+}
+
+.dropdown-content a:last-child {
+  color: rgb(252, 71, 161);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sign-up {
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "promotion image"
+    "heading image"
+    "text image"
+    "sign up";
+}
+
+.sign-up .pink-creature {
+  height: 400px;
+  grid-area: image;
+  overflow: hidden;
+  margin-right: 200px;
+  text-align: right;
+  position: relative;
+  top: -50px;
+}
+
+.sign-up p:nth-child(1) {
+  grid-area: promotion;
+  font-weight: bold;
+  color: rgb(252, 71, 161);
+  padding-top: 50px;
+}
+
+.sign-up h1 {
+  grid-area: heading;
+  font-weight: 900;
+  margin-top: auto;
+  margin-right: -100px;
+  padding-bottom: 75px;
+  font-size: 40px;
+}
+
+.sign-up .promotion-text {
+  grid-area: text;
+  margin-top: -80px;
+  margin-right: -80px;
+  color: rgb(107, 107, 107);
+}
+
+.sign-up button {
+  max-width: 125px;
+  min-width: 125px;
+  max-height: 50px;
+  margin-top: -200px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, rgb(219, 57, 206), red, #e67c27);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#free-NFT-promotion {
+  margin-top: -200px;
+  margin-left: -50px;
+  background-image: url(assets/background.svg);
+  padding: 60px 20px 30px 70px;
+  text-align: left;
+}
+
+#company-logos {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#company-logos img {
+  margin: 5px;
+  width: 80px;
+}
+
+#company-logos img:first-child {
+  width: 86px;
+  object-fit: cover;
+  object-position: left;
+}
+
+#company-logos :nth-child(3) {
+  width: 75px;
+}
+
+.auction, footer {
+  padding: 30px;
+}
+
+.auction p, footer p, footer i, footer table{
+  color: rgb(107, 107, 107);
+}
+
+#card-containers {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.card {
+  margin-right: 15px;
+}
+
+.card img {
+  width: 218px;
+}
+
+.container table tr td img {
+  width: 10px;
+}
+
+.container table {
+  min-width: 218px;
+  max-width: 218px;
+  padding: 10px;
+  margin-top: -5px;
+  background-color: rgb(223, 217, 217);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-item-1 {
+  color: rgb(224, 77, 24);
+  font-size: 10px;
+}
+
+.card-item-2 {
+  color: rgb(102, 98, 98);
+  font-size: 10px;
+  text-align: right;
+}
+
+.card-item-3 {
+  font-weight: bold;
+}
+
+.card-item-4 {
+  font-weight: bold;
+  text-align: right;
+}
+
+.card-item-5 {
+  color: rgb(102, 98, 98);
+  font-size: 15px;
+}
+
+.card-item-6 {
+  color: rgb(102, 98, 98);
+  font-size: 15px;
+  text-align: right;
+}
+
+.sign-up .green-woman {
+  width: 120px;
+  grid-area: image;
+  overflow: auto;
+  padding-left: 20px;
+  top: 50px;
+  margin-right: -20px;
+  position: relative;
+  top: 60px;
+}
+
+footer {
+  margin-top: -200px;
+  border-top: 1px solid rgb(197, 193, 193);
+}
+
+footer i {
+  padding-right: 10px;
+}
+
+footer table {
+  padding: 50px 0 ;
+  border-collapse: separate;
+  text-align: left;
+}
+
+footer table th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.second-table-column {
+  padding-left: 60px;
+}
